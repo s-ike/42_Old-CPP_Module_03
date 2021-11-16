@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:36:16 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/16 22:43:20 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/16 23:36:33 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 /* ************************************************************************** */
 
 Cat::Cat()
-	: Animal("Cat")
 {
 	std::cout << COLOR_MAGENTA "Cat constructor called" COLOR_RESET << std::endl;
+	type = "Cat";
 	brain = new Brain;
 	std::stringstream	ss;
 	ss << '[' << time(NULL) << "] sleeply";

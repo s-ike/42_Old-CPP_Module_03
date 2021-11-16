@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:36:16 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/16 17:01:01 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/16 23:35:35 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 /* ************************************************************************** */
 
 Cat::Cat()
-	: Animal("Cat")
 {
 	std::cout << COLOR_MAGENTA "Cat constructor called" COLOR_RESET << std::endl;
+	type = "Cat";
 }
 
 Cat::Cat(const Cat& other)

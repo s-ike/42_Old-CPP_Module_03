@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:38:20 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/16 17:00:23 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/16 23:35:50 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 /* ************************************************************************** */
 
 Dog::Dog()
-	: Animal("Dog")
 {
 	std::cout << COLOR_MAGENTA "Dog constructor called" COLOR_RESET << std::endl;
+	type = "Dog";
 }
 
 Dog::Dog(const Dog& other)

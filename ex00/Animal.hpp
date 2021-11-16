@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:13:55 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/16 11:42:19 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/16 23:33:28 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ protected:
 	std::string	type;
 
 public:
-	Animal(const std::string& type = "");
+	Animal();
 	Animal(const Animal& other);
 	Animal&	operator=(const Animal& other);
 	virtual	~Animal();

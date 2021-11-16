@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:21:13 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/16 16:53:55 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/16 23:34:56 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 /*   coplien's form                                                           */
 /* ************************************************************************** */
 
-Animal::Animal(const std::string& type)
-	: type(type)
+Animal::Animal()
+	: type("Animal")
 {
 	std::cout << COLOR_CYAN "Animal constructor called" COLOR_RESET << std::endl;
 }
