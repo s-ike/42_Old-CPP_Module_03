@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:29:40 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/16 16:58:38 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/16 21:32:53 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,11 +55,10 @@ int main()
 		i->makeSound(); //will output the cat sound!
 		meta->makeSound();
 
-		print_header("destructor test");
+		print_header("WrongAnimal destructor test");
 		delete meta;
 		delete i;
 	}
-	print_header("===========================");
 	{
 		print_header("Animal constructor test");
 		Animal	a1;
