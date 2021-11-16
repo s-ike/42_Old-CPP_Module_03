@@ -6,11 +6,12 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:36:16 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/16 11:37:37 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/16 17:01:01 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include "def_color.h"
 #include "Cat.hpp"
 
 /* ************************************************************************** */
@@ -20,18 +21,18 @@
 Cat::Cat()
 	: Animal("Cat")
 {
-	std::cout << "Cat constructor called" << std::endl;
+	std::cout << COLOR_MAGENTA "Cat constructor called" COLOR_RESET << std::endl;
 }
 
 Cat::Cat(const Cat& other)
 {
-	std::cout << "Cat copy constructor called" << std::endl;
+	std::cout << COLOR_MAGENTA "Cat copy constructor called" COLOR_RESET << std::endl;
 	*this = other;
 }
 
 Cat&	Cat::operator=(const Cat& other)
 {
-	std::cout << "Cat assignation operator called" << std::endl;
+	std::cout << COLOR_MAGENTA "Cat assignation operator called" COLOR_RESET << std::endl;
 	if (this != &other)
 	{
 		type = other.type;
@@ -41,7 +42,7 @@ Cat&	Cat::operator=(const Cat& other)
 
 Cat::~Cat()
 {
-	std::cout << "Cat destructor called" << std::endl;
+	std::cout << COLOR_MAGENTA "Cat destructor called" COLOR_RESET << std::endl;
 }
 
 /* ************************************************************************** */

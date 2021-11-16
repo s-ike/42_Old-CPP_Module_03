@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:29:40 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/16 12:14:36 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/16 16:58:38 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 
 void	print_header(const std::string &str)
 {
-	std::cout << COLOR_CYAN << "\n[ " << str << " ]" << COLOR_RESET << std::endl;
+	std::cout << "\n[ " << str << " ]" << std::endl;
 }
 
 int main()
