@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 23:24:13 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/17 14:52:07 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/17 14:53:32 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	print_header(const std::string &str)
 
 int	main()
 {
+	// make test -B
 #ifdef TEST
 	Animal	animal;
 #endif
