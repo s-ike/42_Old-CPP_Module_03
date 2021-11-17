@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 23:24:13 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/17 00:16:26 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/17 14:52:07 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
 
-#define COLOR_RESET		"\033[m"
-#define COLOR_RED		"\033[31m"
+#define COLOR_RESET	"\033[m"
+#define COLOR_RED	"\033[31m"
 
 void	print_header(const std::string &str)
 {
