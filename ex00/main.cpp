@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:29:40 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/16 21:32:53 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/17 17:16:40 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,17 @@ int main()
 		print_header("WrongAnimal destructor test");
 		delete meta;
 		delete i;
+	}
+	{
+		print_header("WrongCat test");
+
+		const WrongCat*	wcat = new WrongCat();
+
+		std::cout << wcat->getType() << " " << std::endl;
+		wcat->makeSound();
+
+		print_header("WrongAnimal destructor test");
+		delete wcat;
 	}
 	{
 		print_header("Animal constructor test");
