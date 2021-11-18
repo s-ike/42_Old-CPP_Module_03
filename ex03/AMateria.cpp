@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 00:32:42 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/17 17:21:45 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/18 14:23:37 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ AMateria::AMateria(AMateria const & other)
 	: _type(other._type)
 {
 	std::cout << COLOR_CYAN "AMateria copy constructor called" COLOR_RESET << std::endl;
-	(void)other;
 }
 
 AMateria&	AMateria::operator=(AMateria const & other)

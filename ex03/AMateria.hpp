@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 00:22:58 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/17 13:16:28 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/18 15:03:23 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ public:
 	AMateria(std::string const & type);
 	AMateria(AMateria const & other);
 	AMateria	&operator=(AMateria const & other);
-	virtual		~AMateria() = 0;
+	virtual		~AMateria();
 
 	std::string const &	getType() const; //Returns the materia type
 
