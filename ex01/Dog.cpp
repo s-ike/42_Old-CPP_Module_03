@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 11:38:20 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/17 17:21:45 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/18 15:21:01 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,9 @@ Dog&	Dog::operator=(const Dog& other)
 	if (this != &other)
 	{
 		type = other.type;
-		delete brain;
-		brain = new Brain(*other.brain);
+		// delete brain;
+		// brain = new Brain(*other.brain);
+		*brain = *other.brain;
 	}
 	return *this;
 }
