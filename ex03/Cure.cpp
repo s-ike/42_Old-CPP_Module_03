@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 10:55:53 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/17 17:21:45 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 13:16:12 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ Cure::Cure()
 }
 
 Cure::Cure(const Cure& other)
+	: AMateria(other._type)
 {
 	std::cout << COLOR_CYAN "Cure copy constructor called" COLOR_RESET << std::endl;
-	_type = other._type;
 }
 
 Cure&	Cure::operator=(const Cure& other)

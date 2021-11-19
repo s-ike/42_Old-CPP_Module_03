@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 00:56:14 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/17 17:21:45 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 13:16:38 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ Ice::Ice()
 }
 
 Ice::Ice(const Ice& other)
+	: AMateria(other._type)
 {
 	std::cout << COLOR_CYAN "Ice copy constructor called" COLOR_RESET << std::endl;
-	_type = other._type;
 }
 
 Ice&	Ice::operator=(const Ice& other)

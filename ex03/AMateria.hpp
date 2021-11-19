@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 00:22:58 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/18 15:03:23 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 13:14:56 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,10 @@ class AMateria
 protected:
 	std::string	_type;
 
-public:
+private:
 	AMateria();
+
+public:
 	AMateria(std::string const & type);
 	AMateria(AMateria const & other);
 	AMateria	&operator=(AMateria const & other);

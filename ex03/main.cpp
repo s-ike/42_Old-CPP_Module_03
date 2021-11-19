@@ -187,5 +187,22 @@ int	main()
 		c2.use(0, c1);
 		leaks();
 	}
+	{
+		print_header("Concrete materia copy construcor test");
+		Ice	ice1;
+		Ice	ice2(ice1);
+
+		std::cout << "ice2(ice1); ice2 =" << std::endl;
+		std::cout << ice2.getType() << std::endl;
+	}
+	{
+		print_header("Concrete materia assignment test");
+		Ice	ice1;
+		Ice	ice2;
+
+		ice2 = ice1;
+		std::cout << "ice2 = ice1; ice2 =" << std::endl;
+		std::cout << ice2.getType() << std::endl;
+	}
 	leaks();
 }
