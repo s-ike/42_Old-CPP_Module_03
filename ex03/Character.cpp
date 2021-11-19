@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 11:14:47 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/17 17:21:45 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 13:10:45 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,14 @@ Character&	Character::operator=(const Character& other)
 		_name = other._name;
 		for (int i = 0; i < MAX; i++)
 		{
+			AMateria*	tmp = NULL;
+			// Check if bad_alloc appears first
+			if (other._inventory[i])
+				tmp = other._inventory[i]->clone();
 			delete _inventory[i];
 			_inventory[i] = NULL;
 			if (other._inventory[i])
-				_inventory[i] = other._inventory[i]->clone();
+				_inventory[i] = tmp;
 		}
 	}
 	return *this;

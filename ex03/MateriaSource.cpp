@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 15:29:38 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/17 17:21:45 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 13:07:05 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,14 @@ MateriaSource&	MateriaSource::operator=(const MateriaSource& other)
 	{
 		for (int i = 0; i < MAX; i++)
 		{
+			AMateria*	tmp = NULL;
+			// Check if bad_alloc appears first
+			if (other._materias[i])
+				tmp = other._materias[i]->clone();
 			delete _materias[i];
 			_materias[i] = NULL;
 			if (other._materias[i])
-				_materias[i] = other._materias[i]->clone();
+				_materias[i] = tmp;
 		}
 	}
 	return *this;
